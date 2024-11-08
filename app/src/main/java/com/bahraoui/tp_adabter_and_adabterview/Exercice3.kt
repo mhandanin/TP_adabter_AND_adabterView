@@ -25,7 +25,7 @@ class Exercice3 : AppCompatActivity() {
         )
 
 
-        val adapter=SimpleAdapter(this,listPays,R.layout.customadabter_exercice3, arrayOf("pays","monnaie","iso"),
+        val adapter=SimpleAdapter(this,listPays,R.layout.customlayout_exercice3, arrayOf("pays","monnaie","iso"),
             intArrayOf(R.id.nomPays,R.id.monnaie,R.id.iso))
         lv.adapter=adapter
     }

@@ -33,7 +33,7 @@ class Exercice2 : AppCompatActivity() {
                 "annee" to e.value.second
             )
         }
-        val adapter=SimpleAdapter(this,langueProgrammationMap,R.layout.customadabter_exercice2, arrayOf("icon","nom","annee"),
+        val adapter=SimpleAdapter(this,langueProgrammationMap,R.layout.customlayout_exercice2, arrayOf("icon","nom","annee"),
             intArrayOf(R.id.icon,R.id.nom,R.id.anneeApparation))
         lv.adapter=adapter
 
