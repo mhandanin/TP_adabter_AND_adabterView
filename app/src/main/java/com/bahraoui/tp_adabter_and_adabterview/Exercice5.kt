@@ -1,9 +1,12 @@
 package com.bahraoui.tp_adabter_and_adabterview
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ListView
 import android.widget.SimpleAdapter
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class Exercice5 : AppCompatActivity() {
@@ -13,6 +16,9 @@ class Exercice5 : AppCompatActivity() {
         setContentView(R.layout.layout_exercice5)
 
         val lv = findViewById<ListView>(R.id.lv)
+        val FAB = findViewById<FloatingActionButton>(R.id.floatingActionButton)
+
+        Toast.makeText(this, "Exercice 5", Toast.LENGTH_SHORT).show()
 
 
         val listePersonnes = arrayListOf(
@@ -25,5 +31,11 @@ class Exercice5 : AppCompatActivity() {
 
         val adapter = customAdabter_exercice5(this, listePersonnes)
         lv.adapter = adapter
+
+
+        FAB.setOnClickListener {
+            val intent = Intent(this@Exercice5, Exercice1::class.java)
+            startActivity(intent)
+        }
     }
 }

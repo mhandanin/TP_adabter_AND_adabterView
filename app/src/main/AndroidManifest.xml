@@ -12,54 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TP_adabter_AND_adabterView"
         tools:targetApi="31">
-<!--        <activity-->
-<!--            android:name=".Exercice1"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-
-
-
-<!--        <activity android:name=".Exercice2" />-->
-
-<!--        <activity-->
-<!--            android:name=".Exercice2"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-
-<!--        <activity-->
-<!--            android:name=".Exercice3"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-
-
-<!--        <activity-->
-<!--            android:name=".Exercice4"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-
-
         <activity
-            android:name=".Exercice5"
+            android:name=".Exercice1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,6 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Exercice2" />
+        <activity android:name=".Exercice3" />
+        <activity android:name=".Exercice4" />
+        <activity android:name=".Exercice5" />
 
 
     </application>

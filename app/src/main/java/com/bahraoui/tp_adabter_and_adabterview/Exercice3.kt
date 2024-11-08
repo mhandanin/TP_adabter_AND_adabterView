@@ -1,9 +1,12 @@
 package com.bahraoui.tp_adabter_and_adabterview
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ListView
 import android.widget.SimpleAdapter
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class Exercice3 : AppCompatActivity() {
@@ -11,7 +14,11 @@ class Exercice3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 //        enableEdgeToEdge()
         setContentView(R.layout.layout_exercice3)
-        val lv=findViewById<ListView>(R.id.affichage)
+        val lv = findViewById<ListView>(R.id.affichage)
+        val FAB = findViewById<FloatingActionButton>(R.id.floatingActionButton)
+
+        Toast.makeText(this, "Exercice 3", Toast.LENGTH_SHORT).show()
+
 
         val listPays = listOf(
             mapOf("pays" to "Palestine", "monnaie" to "Pound", "iso" to "PP"),
@@ -25,8 +32,16 @@ class Exercice3 : AppCompatActivity() {
         )
 
 
-        val adapter=SimpleAdapter(this,listPays,R.layout.customlayout_exercice3, arrayOf("pays","monnaie","iso"),
-            intArrayOf(R.id.nomPays,R.id.monnaie,R.id.iso))
-        lv.adapter=adapter
+        val adapter = SimpleAdapter(
+            this, listPays, R.layout.customlayout_exercice3, arrayOf("pays", "monnaie", "iso"),
+            intArrayOf(R.id.nomPays, R.id.monnaie, R.id.iso)
+        )
+        lv.adapter = adapter
+
+
+        FAB.setOnClickListener {
+            val intent = Intent(this@Exercice3, Exercice4::class.java)
+            startActivity(intent)
+        }
     }
 }
