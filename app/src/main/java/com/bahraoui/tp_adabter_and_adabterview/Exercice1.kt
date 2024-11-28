@@ -24,15 +24,15 @@ class Exercice1 : AppCompatActivity() {
 
         /*-----------------------------Question 1-----------------------------*/
 
-//        val adp1=ArrayAdapter(this,android.R.layout.simple_list_item_1,languageProgrammation)
-//        lv.adapter=adp1
+        val adp1=ArrayAdapter(this,android.R.layout.simple_list_item_1,languageProgrammation)
+        lv.adapter=adp1
 
 
         /*-----------------------------Question 2-----------------------------*/
 
-//        val adp2=ArrayAdapter(this,android.R.layout.simple_list_item_single_choice,languageProgrammation)
-//        lv.adapter=adp2
-//        lv.choiceMode=ListView.CHOICE_MODE_SINGLE
+        val adp2=ArrayAdapter(this,android.R.layout.simple_list_item_single_choice,languageProgrammation)
+        lv.adapter=adp2
+        lv.choiceMode=ListView.CHOICE_MODE_SINGLE
 
 
         /*-----------------------------Question 3-----------------------------*/
